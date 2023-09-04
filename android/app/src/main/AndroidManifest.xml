@@ -12,6 +12,7 @@
         <meta-data android:name="com.google.android.geo.API_KEY"
            android:value="AIzaSyDZF_oNL8olqMqAbgcjl6HU1vj2eEjx1Hw"/>
 
+
         <activity
             android:name="com.example.tasks_app.MainActivity"
             android:exported="true"

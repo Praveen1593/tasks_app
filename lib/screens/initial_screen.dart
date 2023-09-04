@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:tasks_app/screens/payment_screen.dart';
+
+import 'package:tasks_app/screens/products_screen.dart';
 import 'package:tasks_app/screens/youtube_home.dart';
 import '../../baseUtils/constants.dart';
 import '../baseUtils/colors.dart';
-import 'common.dart';
+
 import 'google_map.dart';
-import 'home_screen.dart';
-import 'othertasks/othertasks_screen.dart';
+
 
 
 
@@ -34,10 +34,10 @@ class InitialScreenState extends State<InitialScreen> {
     super.initState();
 
     bottomItemList.clear();
-    bottomItemList.add(BottomModel(name:"Camera", icon:Icons.camera_alt));
-    bottomItemList.add(BottomModel(name:"Map & Youtube", icon:Icons.map));
-    bottomItemList.add(BottomModel(name:"Tasks", icon: Icons.task_alt));
-    bottomItemList.add(BottomModel(name:"Payment", icon:Icons.payment));
+    //bottomItemList.add(BottomModel(name:"Camera", icon:Icons.camera_alt));
+    bottomItemList.add(BottomModel(name:"Map", icon:Icons.map));
+    bottomItemList.add(BottomModel(name:"Products", icon: Icons.task_alt));
+
 
 
 
@@ -81,10 +81,9 @@ class InitialScreenState extends State<InitialScreen> {
                 child: Container(
                   //height: getDeviceHeightByPercentage(, context),
                   //padding: EdgeInsets.only(top: MediaQuery. of(context). viewPadding.top),
-                  child: currentTabIndex == 1? CommonScreen():
-                  currentTabIndex == 2?OthertasksScreen():
-                  currentTabIndex == 3? PaymentPage():
-                  HomePage(),
+                  child: currentTabIndex == 1? ProductsScreen():
+
+                  MapSample(),
                 ),
               ),
               Container(

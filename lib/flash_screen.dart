@@ -54,7 +54,7 @@ class FlashScreenState extends State<FlashScreen> {
             child: AnimatedSplashScreen(
               splashTransition: SplashTransition.fadeTransition,
 
-              splash:Image.asset('assets/images/logo.png'),
+              splash:Image.asset('assets/images/tara_blooms.jpg'),
               nextScreen: InitialScreen(),
             ),
           ),
